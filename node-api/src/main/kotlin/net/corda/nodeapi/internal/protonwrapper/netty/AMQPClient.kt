@@ -102,7 +102,7 @@ class AMQPClient(val targets: List<NetworkHostAndPort>,
 
         init {
             keyManagerFactory.init(parent.keyStore, parent.keyStorePrivateKeyPassword.toCharArray())
-            trustManagerFactory.init(parent.trustStore)
+            trustManagerFactory.init(initialiseTrustStoreAndEnableCrlChecking(parent.trustStore))
         }
 
         override fun initChannel(ch: SocketChannel) {
