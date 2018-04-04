@@ -44,6 +44,8 @@ Unreleased
 
 * java.security.cert.X509CRL serialization support added.
 
+* Upgraded H2 to v1.4.197.
+
 .. _changelog_v3:
 
 Version 3.0
